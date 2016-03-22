@@ -1,0 +1,19 @@
+{
+  "name": "react-native-braintree-card",
+  "version": "0.0.0",
+  "description": "A react native interface for integrating Braingtree Paypal UI",
+  "main": "js/BraintreePayPal.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferndopolis/react-native-braintree-paypal.git"
+  },
+  "author": "Fernando Marcheselli <fmarcheselli@gmail.com> (https://github.com/ferndopolis)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ferndopolis/react-native-braintree-paypal/issues"
+  },
+  "homepage": "https://github.com/ferndopolis/react-native-braintree-paypal/",
+  "peerDependencies": {
+    "react-native": ">=0.17.0"
+  }
+}

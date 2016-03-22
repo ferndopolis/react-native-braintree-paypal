@@ -17,7 +17,6 @@ RCT_EXPORT_METHOD(showPayPalViewController:(RCTResponseSenderBlock)callback)
 
   // Start the Vault flow, or...
   [payPalDriver authorizeAccountWithCompletion:^(BTPayPalAccountNonce *tokenizedPayPalAccount, NSError *error) {
-    ...
       NSArray *args = @[];
       if ( error == nil ) {
         args = @[[NSNull null], tokenizedPayPalAccount];

@@ -1,6 +1,6 @@
 'use strict';
 
-var RNBraintreePayPal = require('react-native').NativeModules.RNBraintreeCard;
+var RNBraintreePayPal = require('react-native').NativeModules.RNBraintreePayPal;
 
 var BraintreePayPal = {
     initWithAuthorization(clientToken) {

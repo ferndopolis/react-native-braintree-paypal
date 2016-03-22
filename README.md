@@ -1,7 +1,7 @@
-# react-native-braintree-card
+# react-native-braintree-paypal
 
-A react native interface for handling Braintree's card nonce creation,
-when using a custom credit card UI.
+A react native interface for handling Braintree's paypal nonce creation,
+when using a custom credit paypal UI.
 
 For those using the Braintree's v.zero SDK, check out [react-native-braintree](https://github.com/alawong/react-native-braintree).
 
@@ -10,19 +10,19 @@ For those using the Braintree's v.zero SDK, check out [react-native-braintree](h
 ### Setup
 ```js
 // outside of your componet
-import BraintreeCardClient from 'react-native-braintree-card';
+import BraintreeCardClient from 'react-native-braintree-paypal';
 
 // in your componentDidMount() block
 BraintreeCardClient.initWithAuthorization(<token>);
 
-// handle form submit event after user inputs card detail
-BraintreeCardClient.getCardNonce( card, expMonth, expYear, cvv, (error, nonce) => {
+// handle form submit event after user inputs paypal detail
+BraintreeCardClient.getCardNonce( paypal, expMonth, expYear, cvv, (error, nonce) => {
    // if error handle accordingly or pass nonce to your server
 });
 ```
 
 ## Installation
-1. Run `npm install react-native-braintree-card --save` to add the package
+1. Run `npm install react-native-braintree-paypal --save` to add the package
 2. Inside the ``ios/`` directory, create a Podfile:
 
   ```ruby
@@ -36,7 +36,7 @@ BraintreeCardClient.getCardNonce( card, expMonth, expYear, cvv, (error, nonce) =
       'RCTText',
       'RCTWebSocket'
     ]
-    pod 'react-native-braintree-card', :path => '../node_modules/react-native-braintree-card'
+    pod 'react-native-braintree-paypal', :path => '../node_modules/react-native-braintree-paypal'
   end
   ```
 
@@ -50,7 +50,7 @@ BraintreeCardClient.getCardNonce( card, expMonth, expYear, cvv, (error, nonce) =
     'RCTText',
     'RCTWebSocket'
   ]
-  pod 'react-native-braintree-card', :path => '../node_modules/react-native-braintree-card'
+  pod 'react-native-braintree-paypal', :path => '../node_modules/react-native-braintree-paypal'
   ```
 
 3. Run `pod install`.  This installs the Braintree iOS SDK and a new workspace is created.
